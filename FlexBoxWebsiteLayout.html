@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website Layout Examples </title>
+    <style>
+       
+      
+        body {
+          padding: 2em;
+        }
+  
+        .headerContainer {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          background-color: rgb(13, 12, 12);
+          font-weight: bold;
+          color: aliceblue;
+          padding: 10px;
+          text-decoration: underline;
+        }
+        .footerContainer {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          background-color: rgb(8, 9, 8);
+          color: aliceblue;
+          font-weight: bold;
+          padding: 10px;
+        }
+        .mainContainer {
+          display: flex;
+          flex-flow: row wrap;
+          font-weight: bold;
+          text-align: center;
+        }
+        .mainContainerItem {
+          text-align: left;
+          background: rgb(54, 54, 60);
+        }
+        article {
+          padding: 10px;
+          margin: 10px;
+          background: rgb(245, 122, 138);
+        }
+  
+        .sideBarLeftItem {
+            
+            background: rgb(136, 212, 245);
+        }
+  
+        .sideBarRightItem {
+            background: rgb(136, 212, 245);
+        }
+        .sideBarItem {
+          flex: 1 0 0;
+          border: 1px solid #6f2232;
+        }
+        .mainContainerItem {
+          flex: 3 0px;
+        }
+        .sideBarLeftItem {
+          order: 1;
+        }
+        .mainContainerItem {
+          order: 2;
+        }
+        .sideBarRightItem {
+          order: 3;
+        }
+      </style>
+</head>
+<body>
+    <header class="headerContainer">Zerodha- Varsity</header>
+    <div class="mainContainer">
+      <section class="mainContainerItem">
+        <article>
+          <h2>POPULAR COURSES: </h2>
+          <u>
+            <li>BECOME A DAY TRADER</li>
+            <li>INVESTING FOR BEGINNERS</li> 
+            <li>TRADING FOR BEGINNERS</li>
+            <li>TECHNICAL ANALYSIS</li>
+            <li>FINANCIAL MODELING</li>
+          </u>
+        </article>
+      <center> <h1 style="color:white">What is Stock Market</h1></center> 
+        <article>
+          <h2>Introduction to stock market</h2>
+          <p>
+            The stock market is a component of a free-market economy. It allows companies to raise money by offering stock shares and corporate bonds and allows investors to participate in the financial achievements of the companies, make profits through capital gains, and earn income through dividends.
+          </p>
+        </article>
+        <article>
+          <h2>How the Stock Market Works</h2>
+          <p>
+            Stock markets provide a secure and regulated environment where market participants can transact in shares and other eligible financial instruments with confidence, with zero to low operational risk. Operating under the defined rules as stated by the regulator, the stock markets act as primary markets and secondary markets.
+          </p>
+        </article>
+      </section>
+      <sidebar class="sideBarItem sideBarLeftItem"> <h4>For more <Strong> Details</Strong>, Please click on given tag bellow.</h4>
+        <hr>
+      <details>
+       
+        
+        <p> <strong>Stock</strong> markets are at the heart of the global financial system. Businesses need the stock markets to raise capital. Individuals, charitable foundations, pension funds and other investors access the markets to buy and sell the stocks of these businesses. Regulators are there to protect investors from abusive trading practices and to preserve the integrity of the financial system.</p>
+       
+
+      </details>  
+      
+      <br><br>
+      <hr>
+      <h3>Why students choose Varsity:</h3>
+      <ul>
+        <li>Access courses anytime, anywhere you have an internet connection – for life.
+        </li>
+        <li>Work at any pace - no need to worry about falling behind if life gets busy. Set your own schedule and review modules as often as you like.
+        </li>
+        <li>Learn from top experts in their field who have spent over ten years mastering the tools and tricks of the trade.
+        </li>
+        <li>Enjoy your purchase risk-free with our 30-day money-back guarantee.
+        </li>
+      </ul>
+      <hr>
+      <h3>Contact On</h3><br>
+      
+      <a href="https://www.linkedin.com/in/rudransh-bansal-63b349188/" target="blank" class="insta">Rudransh Bansal</a>
+      </sidebar>
+      
+      <sidebar class="sideBarItem sideBarRightItem"> <h4>Hurry! Limited seats available , Choose your courses by registering yourself from given link Below.</h4> 
+        
+    <a href="https://zerodha.com/varsity/" target="_blank">Click Here to select the courses.</a> 
+    <br> <br>  <hr>
+    <h3>ABOUT US</h3>
+    
+    <p>We believe that finance and investing don’t have to be complicated. At Varsity, we empower learners of all backgrounds and experience levels to make smarter financial decisions through actionable online education.</p>
+
+        <a href="https://zerodha.com/varsity/" target="_blank">www.Zerodha.com/</a>
+    <hr>
+    <h3>ABOUT OUR EXPERTS</h3>
+    <p>Our courses are taught by seasoned industry veterans with years of market experience - who have been handpicked by the leading authority in financial education. Our accomplished course instructors have weathered the ups and downs of countless market cycles and have mastered the tips and tricks you need to succeed.</p>
+</sidebar>
+    </div>
+    <footer class="footerContainer">Copyright © 2022, Varsity. </footer>
+</body>
+</html>
